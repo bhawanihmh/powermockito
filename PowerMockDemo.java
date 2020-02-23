@@ -1,4 +1,4 @@
-package com.adcb.payment.salary;
+package com.xxxx.payment.salary;
 
 public class PowerMockDemo {
 
