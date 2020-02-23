@@ -1,0 +1,5 @@
+com\javacodegeeks\mockito\PowerMockitoIntegrationExample.class
+com\javacodegeeks\mockito\PowerMockitoStubPrivateMethodExample.class
+com\javacodegeeks\mockito\PowerMockitoStaticMethodExample.class
+com\javacodegeeks\mockito\PowerMockitoVerifyPrivateMethodExample.class
+com\javacodegeeks\mockito\PowerMockitoStaticVoidMethodExample.class
