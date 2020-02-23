@@ -1,4 +1,4 @@
-package com.adcb.payment.salary;
+package com.xxxx.payment.salary;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -47,7 +47,7 @@ public class PowerMockDemoTest {
 		FieldSetter fieldSetter = new FieldSetter(testStaticSpy, executorField);
 		fieldSetter.set(companySpy);
         
-		when(companySpy.getCompanyName()).thenReturn("ADCB Enterprises");
+		when(companySpy.getCompanyName()).thenReturn("xxxx Enterprises");
         
        // PowerMockito.doReturn(mockPoint).when(employeeSpy, "getEmployee", anyObject());
         PowerMockito.mockStatic(Employee.class);
