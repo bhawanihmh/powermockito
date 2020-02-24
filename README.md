@@ -95,3 +95,45 @@ Checks that both variables refer to the same object.
 assertNotSame([message,] expected, actual)
 
 Checks that both variables refer to different objects.
+
+# ===========================================================================
+Java Document comments for Junit test cases:
+https://docs.oracle.com/javame/test-tools/jdts/dev_guide/SpecialComments.html
+
+javadoc -package -classpath c:\source;c:\junit3.8.1\junit.jar studentinfo
+#  Typical Test Case Block Comment  
+Example:<br>
+/**
+   * Interactive test that asks user to install more than one test MIDlet
+   * suite associated with this test case. In order to do that the developer needs
+   * to define the <code>JADPath&lt;N&gt;</code> and 
+   * <code>JARPath&lt;N&gt;</code> properties, where
+   * <code>N</code> is decimal integer starting from 1 to infinity (without gaps). 
+   * For instance, if you need a testcase to install 3 MIDlet suites, use N=1,2, and 3.
+   * Each property contains the pointer to the appropriate test MIDlet.
+   * 
+   * @testcase
+   * 
+   * @precondition none
+   * 
+   * @userInteraction
+   * <ul>
+   * <li>Install <code>syspropviewer.jad</code> using the
+   *    provided URL</li>
+   * <li>Select installed MIDlet and launch it</li>
+   * <li>Install <code>choicegroup.jad</code> using the
+   *    provided URL</li>
+   * <li>Select installed MIDlet and launch it.</li>
+   * </ul>
+   * @postcondition The 2 MIDlet suites are installed
+   * @passCriteria User is able to install both of the MIDlet suites and
+   *    launch them. The "SysPropertiesViewer" MIDlet should show a list of 
+   *    system properties describing your device. "ChoiceGroupDemo" application 
+   *    should display different types of choice group UI.
+   * 
+   * @card.property JADPath1=syspropviewer/syspropviewer.jad
+   * @card.property JARPath1=syspropviewer/syspropviewer.jar
+   * @card.property JADPath2=choicegroup/choicegroup.jad
+   * @card.property JARPath2=choicegroup/choicegroup.jar
+   */
+void t02InstallMoreThanOneMIDletSuite();
